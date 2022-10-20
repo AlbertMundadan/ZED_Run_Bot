@@ -6,7 +6,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
 import sys
 
-# Insert information into lines 10-22
+# Insert information into lines 10-21
 HORSE1 = "INSERT HORSE NAME"  # Exact spelling/capitalization required
 PREFERRED_DISTANCE1 = 'INSERT PREFERRED DISTANCE'  # Add "m" to the end of distance
 PREFERRED_GATE1 = 'INSERT FIRST GATE PREFERENCE'
@@ -16,7 +16,6 @@ MAX_BUY_IN1 = 50.0  # Insert $ Value buy-in must be under
 METAMASK_PASSWORD = "INSERT PASSWORD HERE"
 sys.setrecursionlimit(10**3)   # Total Repetitions of Program
 options = webdriver.ChromeOptions()
-# Create new user profile, Change settings with minimal aesthetic changes, Use profile name for line 12
 options.add_argument(r"--user-data-dir=INSERT FILEPATH OF CHROME USER DATA COPY")
 options.add_argument(r'--profile-directory=INSERT CHROME PROFILE NAME')
 driver = webdriver.Chrome(executable_path=r"INSERT FILEPATH OF CHROME DRIVER", options=options)
